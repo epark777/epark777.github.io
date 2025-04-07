@@ -3,20 +3,46 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Elliot Park</title>
+      <meta
+         name="description"
+         content="Elliot Park - Healthcare and Technology Professional specializing in full-stack web development with JavaScript, React, Node.js, and Python."
+      />
+      <meta name="author" content="Elliot Park" />
+      <meta
+         name="keywords"
+         content="software engineer, full-stack developer, healthcare technology, React, JavaScript, Python, Node.js"
+      />
+
+      <meta property="og:title" content="Elliot Park | Software Engineer" />
+      <meta
+         property="og:description"
+         content="Healthcare and Technology Professional specializing in full-stack web development"
+      />
+      <meta property="og:image" content="images/profile.jpg" />
+      <meta property="og:url" content="https://epark777.github.io/" />
+      <meta property="og:type" content="website" />
+
+      <title>Elliot Park | Software Engineer</title>
       <link rel="stylesheet" href="styles.css" />
+      <link rel="icon" href="favicon.ico" type="image/x-icon" />
+      <link rel="preload" href="styles.css" as="style" />
+      <link rel="preload" href="script.js" as="script" />
    </head>
    <body>
       <div class="container">
          <header>
-            <a href="#" class="logo"
-               >Elliot Park<span class="accent">.</span></a
-            >
+            <a href="/" class="logo">
+               <img src="Elliot_Park_logo_3.png" alt="Elliot Park Logo" class="logo-image">
+           </a>
             <nav>
+               <div class="mobile-menu-toggle">☰</div>
                <ul>
                   <li><a href="#about">About</a></li>
                   <li><a href="#projects">Projects</a></li>
                   <li><a href="#contact">Contact</a></li>
+                  <li>
+                     <a href="Elliot_Park_Resume.pdf">Resume</a>
+                  </li>
                </ul>
             </nav>
          </header>
@@ -24,20 +50,18 @@
          <section class="hero">
             <h1>Hi, I'm <span class="accent">Elliot</span>.</h1>
             <p>
-               Driven healthcare and technology professional with a Master’s in
+               Driven healthcare and technology professional with a Master's in
                Healthcare Administration (USC) and software engineering
                certification from App Academy. Experienced in business
                operations and project management at UCLA Health, with expertise
                in full-stack web development (JavaScript, React, Node.js,
                Python). Passionate about leveraging technology to drive
                efficiency, optimize workflows, and enhance user experiences.
-               Seeking opportunities to apply a unique blend of industry
-               knowledge and technical skills to create impactful business
-               solutions
             </p>
             <div class="contact-links">
                <a href="mailto:parkelliot777@gmail.com">Get In Touch</a>
                <a href="#projects">View Projects</a>
+               <a href="Elliot_Park_Resume.pdf" download>Download Resume</a>
             </div>
          </section>
 
@@ -47,52 +71,116 @@
                <div class="line"></div>
             </div>
 
-            <div class="project-card">
-               <h3>StadiumLive</h3>
-               <p>
-                  • Developed StadiumLive, an Airbnb clone, using a custom API
-                  built with Express and Sequelize to manage backend data
-                  robustly
-                  <br />
-                  <br />
-                  • Designed an interactive, user-centric frontend with React
-                  that replicates key functionalities, including property
-                  browsing, booking management, and secure user authentication
-                  <br />
-                  <br />
-                  • Integrated a Redux store for efficient state management,
-                  enabling real-time updates to enhance the overall user
-                  experience
-               </p>
-               <a href="https://github.com/epark777/StadiumLive" target="_blank">View Project →</a>
-               <div class="tags">
-                  <span class="tag">React</span>
-               </div>
-            </div>
+            <div class="projects-grid">
+               <article class="project-card">
+                  <h3>StadiumLive</h3>
+                  <p>
+                     • Developed StadiumLive, an Airbnb clone, using a custom
+                     API built with Express and Sequelize to manage backend data
+                     robustly
+                     <br />
+                     <br />
+                     • Designed an interactive, user-centric frontend with React
+                     that replicates key functionalities, including property
+                     browsing, booking management, and secure user
+                     authentication
+                     <br />
+                     <br />
+                     • Integrated a Redux store for efficient state management,
+                     enabling real-time updates to enhance the overall user
+                     experience
+                  </p>
+                  <div
+                     class="contact-links"
+                     style="justify-content: flex-start"
+                  >
+                     <a
+                        href="https://github.com/epark777/StadiumLive"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >View Code</a
+                     >
+                  </div>
+                  <div class="tags">
+                     <span class="tag">React</span>
+                     <span class="tag">Redux</span>
+                     <span class="tag">Express</span>
+                     <span class="tag">Sequelize</span>
+                     <span class="tag">Node.js</span>
+                  </div>
+               </article>
 
-            <div class="project-card">
-               <h3>CardConnect</h3>
-               <p>
-                  • Developed CardConnect, a digital business card platform with
-                  MVP features for creating, sharing, and organizing business
-                  cards
-                  <br />
-                  <br />
-                  • Enabled users to create professional digital business cards
-                  by entering personal and professional details, uploading
-                  logos/profile pictures, previewing designs, and saving cards
-                  to their account
-                  <br />
-                  <br />
-                  • Designed an intuitive interface for organizing cards into
-                  categories, filtering/searching contacts by keywords, and
-                  adding personalized notes for future reference
-               </p>
-               <a href="#" target="_blank">View Project →</a>
-               <div class="tags">
-                  <span class="tag">React</span>
-                  <span class="tag">Python</span>
-               </div>
+               <article class="project-card">
+                  <h3>CardConnect</h3>
+                  <p>
+                     • Developed CardConnect, a digital business card platform
+                     with MVP features for creating, sharing, and organizing
+                     business cards
+                     <br />
+                     <br />
+                     • Enabled users to create professional digital business
+                     cards by entering personal and professional details,
+                     uploading logos/profile pictures, previewing designs, and
+                     saving cards to their account
+                     <br />
+                     <br />
+                     • Designed an intuitive interface for organizing cards into
+                     categories, filtering/searching contacts by keywords, and
+                     adding personalized notes for future reference
+                  </p>
+                  <div
+                     class="contact-links"
+                     style="justify-content: flex-start"
+                  >
+                     <a
+                        href="https://github.com/epark777/CardConnect"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >View Code</a
+                     >
+                  </div>
+                  <div class="tags">
+                     <span class="tag">React</span>
+                     <span class="tag">Python</span>
+                     <span class="tag">Flask</span>
+                     <span class="tag">SQLAlchemy</span>
+                  </div>
+               </article>
+
+               <article class="project-card">
+                  <h3>MyPlanner</h3>
+                  <p>
+                     • Engineered MyPlanner, a Kanban-style task management
+                     application with a Flask backend using SQLAlchemy ORM for
+                     robust database interactions
+                     <br />
+                     <br />
+                     • Implemented comprehensive user authentication with secure
+                     login, registration, and session management while
+                     incorporating CSRF protection and rate limiting
+                     <br />
+                     <br />
+                     • Created an intuitive React frontend with Redux for state
+                     management, featuring drag-and-drop functionality for
+                     tasks, customizable boards, and real-time updates
+                  </p>
+                  <div
+                     class="contact-links"
+                     style="justify-content: flex-start"
+                  >
+                     <a
+                        href="https://github.com/epark777/MyPlanner"
+                        target="_blank"
+                        >View Code</a
+                     >
+                  </div>
+                  <div class="tags">
+                     <span class="tag">React</span>
+                     <span class="tag">Flask</span>
+                     <span class="tag">Redux</span>
+                     <span class="tag">SQLAlchemy</span>
+                  </div>
+               </article>
             </div>
          </section>
 
@@ -134,7 +222,7 @@
                <div class="skills">
                   <h3>Technical Skills</h3>
                   <ul class="skills-list">
-                     <li>JavaScript (ES6+)</li>
+                     <li>JavaScript</li>
                      <li>React & Redux</li>
                      <li>Node.js & Express</li>
                      <li>Python & Flask</li>
@@ -142,6 +230,7 @@
                      <li>HTML & CSS</li>
                      <li>R & Tableau</li>
                      <li>Git & GitHub</li>
+                     <li>Test-Driven Development</li>
                   </ul>
                </div>
             </div>
@@ -153,22 +242,43 @@
                <div class="line"></div>
             </div>
 
-            <p
-               style="
-                  color: var(--secondary-color);
-                  max-width: 600px;
-                  margin: 0 auto 30px;
-                  text-align: center;
-               "
-            >
+            <p class="contact-intro">
                Whether you have a project in mind, a question, or just want to
                say hi, I'll do my best to get back to you!
             </p>
 
-            <div class="contact-links" style="justify-content: center">
+            <form
+               id="contact-form"
+               action="https://formspree.io/f/xwplwngb"
+               method="POST"
+            >
+               <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" required />
+               </div>
+               <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required />
+               </div>
+               <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" required></textarea>
+               </div>
+               <button type="submit" class="form-submit">Send Message</button>
+            </form>
+
+            <div class="contact-links social-links">
                <a href="mailto:parkelliot777@gmail.com">Email Me</a>
-               <a href="https://github.com/epark777">GitHub</a>
-               <a href="https://www.linkedin.com/in/elliot-park-mha-217191152/"
+               <a
+                  href="https://github.com/epark777"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub</a
+               >
+               <a
+                  href="https://www.linkedin.com/in/elliot-park-mha-217191152/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   >LinkedIn</a
                >
             </div>
@@ -178,5 +288,7 @@
             <p>Designed & Built by Elliot Park © 2025</p>
          </footer>
       </div>
+
+      <script src="script.js"></script>
    </body>
 </html>
